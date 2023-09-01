@@ -1,3 +1,30 @@
+
 primo teorema di gershgorin
 secondo teorema di gershgorin
 terzo teorema di gershgorin
+cosa evitare nella moltiplicazione tra matrici
+dipendenza lineare
+rango matrice
+determinante
+sottomatrice
+minore di ordine k
+th binet-cauchy
+determinante di matrice diagonale o triangolare
+matrice aggiunta
+inversa di una matrice
+matrice hermitiana
+matrice simmetrica
+matrice unitaria
+matrice ortogonale
+matrice antisimmetrica
+matrice antihermitiana
+matrici normali
+determinante di A hermitiana
+determinante di A trasposta
+determinante di A*A = I cosa implica
+ATA=I (se A reale) cosa implica nel determinante
+funzione quadratica
+matrice di permutazione
+matrice convergente
+predominanza diagonale
+

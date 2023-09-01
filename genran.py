@@ -2,6 +2,8 @@ import keyboard
 import random
 import os
 
+ran = True #set if randomness is active or not
+
 print("Random question generator. Put your question in ./list.txt.\n")
 try:
     f = open('list.txt','r')
@@ -17,7 +19,6 @@ else:
             print("Reached OEF. Exiting.")
             exit()
         max = len(lines)
-        ran = False
         print("Type esc for exit or any other for next question.\n")
         i = 0
         j = 0
@@ -28,7 +29,7 @@ else:
                 print("Reached OEF. Repeating.")
                 i = 0
             k = input(str(j)+")")
-            if k == "esc":
+            if k == "esc" or k == "e" or k == "exit" or k == "leave" or k == "out":
                 f.close()
                 print("Leaving...\n")
                 exit()
@@ -38,7 +39,10 @@ else:
                 i = i-1
                 continue
             if(not ran):
-                print(lines[i-1])
+                mes = lines[i-1]
+                if len(mes) > 1:
+                    print(f"-> {mes}")
             else:
-                print("-> ")
-                print(random.choice(lines))
+                mes = random.choice(lines)
+                if len(mes) > 1:
+                    print(f"-> {mes}")
